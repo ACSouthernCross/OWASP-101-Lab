@@ -1,9 +1,6 @@
 version: '3.3'
 services:
-    goatandwolf:
+    DVWA:
         ports:
-            - '8080:8080'
-            - '9090:9090'
-        environment:
-            - TZ=America/Toronto
-        image: webgoat/goatandwolf
+            - '80:80'
+        image: vulnerables/web-dvwa
